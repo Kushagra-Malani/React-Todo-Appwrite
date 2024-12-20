@@ -14,8 +14,8 @@ function Login(props) {
         e.preventDefault();
 
         try {
-            //await account.createEmailPasswordSession(user.email, user.password);
-            await account.createEmailSession(user.email, user.password);
+            await account.createEmailPasswordSession(user.email, user.password);
+            //await account.createEmailSession(user.email, user.password);
             navigate("/profile")
         } catch (error) {
             console.log(error);
